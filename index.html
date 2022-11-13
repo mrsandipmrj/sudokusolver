@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="welcome.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <img src="me.jpg" alt="me">
+
+    <h1 id="welcome">Welcome To Sudoku Solver</h1>
+    <form class="form" action="game.html">
+    <div class="input_form">
+        <label for="name">Enter Your Name</label>
+        <input class="name"type="text">
+    </div>
+    <div class="input_form">
+        <label for="age">Enter Your Age</label>
+        <input class="age"type="validNum">
+    </div>
+    <button class="play">Play</button>
+    <div class="alert"></div>
+    </form>
+    <h4>Developed by Sandip Yadav</h4>
+</body>
+<script>
+
+    const age = document.querySelector(".age")
+    var action = document.querySelector(".form").action
+    const valid = document.querySelector(".play")
+  valid.addEventListener('onclick', function valid(){
+    if(age.value <= 5){
+            action="/"
+        }
+    })
+    const play = document.querySelector(".play")
+    play.addEventListener('click', function(){
+        if(age.value <= 5){
+            document.querySelector(".alert").textContent = "You can\'t play,Because you are under age"
+        }
+
+    })
+</script>
+</html>

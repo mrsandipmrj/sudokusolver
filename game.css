@@ -1,0 +1,64 @@
+/*Sudoku Solver */
+.main {
+    font-family:'cascadia code', Consolas, 'Courier New', monospace;
+    background-color: black;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.container {
+    text-align: center
+}
+
+#sudoku-board {
+    border-collapse: collapse;
+    font-size: 2em;
+    margin: 0 auto;
+}
+
+tbody {
+    border: solid medium;
+    border-color: blue;
+
+}
+
+td {
+    border: solid thin;
+    height: 1.4em;
+    width: 1.4em;
+    text-align: center;
+    padding: 0;
+    color: blue;
+    background-color: black;
+
+
+}
+
+button {
+    margin-top: 15px;
+    font-size: 1.4em;
+    border-radius: 6px;
+    background-color: darkblue;
+    color: black;
+    border: 12px;
+    font-family: 'cascadia code', Consolas, 'Courier New', monospace;
+
+}
+
+#button-view button:hover {
+    background-color: blue;
+    color: white;
+}
+
+
+.heading {
+    padding-bottom: 10px;
+    color: blue;
+    font: bolder;
+    font-family:'cascadia code', Consolas, 'Courier New', monospace;
+}
+.plName{
+    color:red;
+    font-size:120px;
+}
